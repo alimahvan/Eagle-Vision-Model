@@ -1,16 +1,17 @@
+<div align="center">
 <p align="center" width="100%">
 <img src="assets/Logo.png"  width="80%" height="80%">
 </p>
-<!-- # EAGLE: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders -->
 
 ---
 
-[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)
-[![Model License](https://img.shields.io/badge/MODEL%20License-CC%20By%20NC%204.0-red.svg)](MODEL_LICENSE)
+[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](../LICENSE)
+[![Model License](https://img.shields.io/badge/MODEL%20License-CC%20BY%20NC%204.0-red.svg)](https://creativecommons.org/licenses/by-nc/4.0/deed.en)
 
 [[arXiv](https://arxiv.org/pdf/2408.15998)] [[HuggingFace](https://huggingface.co/papers/2408.15998)] [[Demo](https://huggingface.co/spaces/NVEagle/Eagle-X5-13B-Chat)] 
 [[Model Zoo](https://huggingface.co/NVEagle)] [[Data](https://huggingface.co/datasets/shi-labs/Eagle-1.8M)]
 
+</div>
 
 ## Introduction
 
@@ -34,15 +35,30 @@ Eagle is a family of Vision-Centric High-Resolution Multimodal LLMs. It presents
 
 
 ## Contents
-- [Models & Performance](#models--performance)
+- [Introduction](#introduction)
+- [Updates](#updates)
+- [Contents](#contents)
+- [Models \& Performance](#models--performance)
 - [Visual Examples](#visual-examples)
+  - [Knowledge \& General VQA](#knowledge--general-vqa)
+  - [Autonomous Driving](#autonomous-driving)
+  - [Infographic, Chart, OCR \& Document Understanding](#infographic-chart-ocr--document-understanding)
 - [Install](#install)
 - [Training Data](#training-data)
+  - [Pre-training](#pre-training)
+  - [Supervised Fine-tuning](#supervised-fine-tuning)
 - [Checkpoint Preparation](#checkpoint-preparation)
 - [Training](#training)
+  - [Pre-training](#pre-training-1)
+  - [Supervised Fine-tuning](#supervised-fine-tuning-1)
+  - [Notes](#notes)
 - [Inference](#inference)
 - [Evaluation](#evaluation)
+  - [Evaluation with LMMs-Eval](#evaluation-with-lmms-eval)
 - [Gradio Demo](#gradio-demo)
+- [Citation](#citation)
+- [License](#license)
+- [Acknowledgement](#acknowledgement)
 
 
 ## Models & Performance
@@ -332,17 +348,19 @@ python gradio_demo.py \
 ## Citation
 If you find this project useful, please cite our work:
 ```
-@article{shi2024eagle,
+@inproceedings{shi2025eagle,
     title = {Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders}, 
     author={Min Shi and Fuxiao Liu and Shihao Wang and Shijia Liao and Subhashree Radhakrishnan and De-An Huang and Hongxu Yin and Karan Sapra and Yaser Yacoob and Humphrey Shi and Bryan Catanzaro and Andrew Tao and Jan Kautz and Zhiding Yu and Guilin Liu},
-    journal={arXiv:2408.15998},
-    year={2024}
+    booktitle={ICLR},
+    year={2025}
 }
 ```
 
 
 ## License
-[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)
+- See [LICENSE](../LICENSE) for the code of this repository.
+- See [LICENSE_MODEL](https://creativecommons.org/licenses/by-nc/4.0/deed.en) for the models of Eagle.
+
 **Usage and License Notices**: This project utilizes certain datasets and checkpoints that are subject to their respective original licenses. Users must comply with all terms and conditions of these original licenses, including but not limited to the [OpenAI Terms of Use](https://openai.com/policies/terms-of-use) for the dataset and the specific licenses for base language models for checkpoints trained using the dataset (e.g. [Llama community license](https://ai.meta.com/llama/license/) for Llama-2, Llama-3, and Vicuna-v1.5). This project does not impose any additional constraints beyond those stipulated in the original licenses. Furthermore, users are reminded to ensure that their use of the dataset and checkpoints is in compliance with all applicable laws and regulations.
 
 
